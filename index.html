@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sistema de monitoramento de partidas</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+  <script src="js/jquery-1.12.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>  
+</head>
+<body>
+
+	<div class="col-md-12">
+    <div class="panel panel-default">
+      <div class="panel-body">
+
+      	<h4>New Match</h4>
+        <form id="formdata">
+          <div class="row">
+            <div class="col-xs-3">
+              <fieldset class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon">Home</span>
+                  <input type="text" id="home_input" class="form-control">
+                </div>
+              </fieldset>
+            </div>
+            <div class="col-xs-1">
+              <fieldset class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon">H</span>
+                  <input type="text" id="home_score_input" class="form-control">
+                </div>
+              </fieldset>
+            </div>
+            <div class="col-xs-1">
+              <fieldset class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon">A</span>
+                  <input type="text" id="away_score_input" class="form-control">
+                </div>
+              </fieldset>
+            </div>
+            <div class="col-xs-3">
+              <fieldset class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon">Away</span>
+                  <input type="text" id="away_input" class="form-control">
+                </div>
+              </fieldset>
+            </div>
+            <div class="col-xs-4">
+              <fieldset class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon">Championship</span>
+                  <input type="text" id="champ_input" class="form-control">
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-7">
+              <fieldset class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon">Place</span>
+                  <input type="text" id="place_input" class="form-control">
+                </div>
+              </fieldset>
+            </div>
+            <div class="col-xs-3">
+              <fieldset class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon">Date</span>
+                  <input type="text" id="date_input" class="form-control">
+                </div>
+              </fieldset>
+            </div>
+            <div class="col-xs-2">
+              <fieldset class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon">Time</span>
+                  <input type="text" id="time_input" class="form-control">
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <button type="submit" id="newmatch_submit" class="btn btn-primary">Submit</button>
+        </form>
+        <br>
+
+        <h4>Search ID</h4>
+        <form>
+          <div class="row">
+            <div class="col-xs-10">
+              <fieldset class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon">Home</span>
+                  <input type="text" id="search_input" class="form-control">
+                </div>
+              </fieldset>
+            </div>
+            <div class="col-xs-1">
+              <button type="submit" id="searchmatch_submit" class="btn btn-primary">Search</button>
+            </div>
+            <div class="col-xs-1">
+              <button type="submit" id="reload_submit" class="btn btn-primary">view all</button>
+            </div>
+          </div>
+         </form>
+
+      	<table class="table table-striped">
+          <thead>
+            <tr>
+              <th class="col-sm-4 text-center" colspan="4">Jogos</th>
+              <th class="col-sm-2 text-center">Campeonato</th>
+              <th class="col-sm-2 text-center">Local</th>
+              <th class="col-sm-2 text-center">Data</th>
+              <th class="col-sm-2 text-center">Horário</th>              
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="js/list-matches.js"></script>
+  <script src="js/search-match.js"></script>
+  <script src="js/create-match.js"></script>
+</body>
+</html>
