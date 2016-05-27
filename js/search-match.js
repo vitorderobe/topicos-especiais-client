@@ -11,7 +11,7 @@ search_button.addEventListener("click", function(){
   var url = "http://localhost:3000/api/v1/games/" + params["id"];
 
   xmlhttp.onreadystatechange = function() {
-    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+    if (xmlhttp.readyState == 4 && (xmlhttp.status == 200 || xmlhttp.status == 404 )) {
       var myObj = JSON.parse(xmlhttp.responseText);
       showSearch(myObj);
     }
